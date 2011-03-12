@@ -1,0 +1,27 @@
+.main-container{
+    font-family: Tahoma;
+    background-color: green;
+}
+
+.header{
+    text-align: center;
+}
+
+.main-content{
+    padding-left: 65px;
+}
+
+span.title{
+    color:blue;
+    font-size:50px;
+    font-weight:bold;
+}
+
+.footer{
+    background-color:#ADD8E6;
+    text-align:center;
+}
+
+.footer span.text{
+    font-size:20px;
+}
