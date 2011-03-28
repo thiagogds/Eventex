@@ -10,7 +10,13 @@ from django.core.mail import send_mail
 
 
 def new(request):
-    form = SubscriptionForm()
+    form = SubscriptionForm(initial={
+        'name': "Escreva seu nome",
+        'cpf': 'Digite o seu CPF sem pontos',
+        'email': "Escreva seu email",
+        'phone_0': "Qual seu DDD",            
+        'phone_1': "Qual seu telefone de contato",            
+    })
     context = RequestContext(request, {'form': form})
     return render_to_response('subscription/new.html', context)
 
